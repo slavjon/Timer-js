@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
     <meta name="description" content="This is example for code demonstration">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="scss/main.css">
 </head>
 
@@ -20,9 +25,19 @@
     <main class="site-main">
         <div class="container">
             <picture>
-                <source srcset="">
-                <img src="" loading="lazy" alt="code cat">
+                <source srcset="img/codecat.webp">
+                <img src="img/codecat.png" class="codecat-img" width="300" height="300" loading="lazy" alt="code cat">
             </picture>
+            <div class="timer-box">
+                <div class="timer">
+                    <div class="timer-item days" data-content="days" id="days"></div>
+                    <div class="timer-item hours" data-content="hours" id="hours"></div>
+                    <div class="timer-item minutes" data-content="minutes" id="minutes"></div>
+                    <div class="timer-item seconds" data-content="seconds" id="seconds"></div>
+                </div>
+                {# <label for="setDate">Set date:</label>
+                <input type="date" id="setDate" name="timer-start" value="" min="2024-01-01" max="2026-12-31" /> #}
+            </div>
         </div>
     </main>
     <footer class="site-footer">
@@ -30,6 +45,7 @@
             <span class="date-year">2024</span> copyright ©
         </div>
     </footer>
+    <script src="js/timer.js"></script>
 </body>
 
 </html>
