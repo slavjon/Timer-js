@@ -1,0 +1,66 @@
+@import "reset";
+
+* {
+    box-sizing: border-box;
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    overscroll-behavior-y: contain;
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    line-height: 1.65;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+//home page
+.site-header{
+    background: #eee;
+}
+.site-main{
+    background: #e3e3e3;
+    flex: 1;
+}
+.site-footer{
+    padding: 25px 0;
+    text-align: center;
+    background: #ccc;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1170px;
+    @media screen and (max-width: 1200px) {
+        padding: 0 15px;
+    }
+}
