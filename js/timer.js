@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", (event) => {
 
-  const endDateTime = "2024-02-23";
+  const endDateTime = "2024-05-23";
 
   function addZeroSymb(num){
     if(num >= 0 && num < 10){
